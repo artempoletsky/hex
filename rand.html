@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript">
+
+        function start() {
+            var canvas = document.getElementById('canvas');
+            var ctx = canvas.getContext('2d');
+
+            function drawPoint(x, y) {
+                ctx.fillRect(Math.floor(x), Math.floor(y), 1, 1);
+            }
+
+            var points = 10000;
+
+
+            for (var i = 0; i < points; i++) {
+
+                var r = Math.acos(Math.random()) * 200/ (Math.PI/2);
+                var angle = Math.random() * Math.PI *2;
+
+
+                drawPoint(r * Math.sin(angle)+450/2, r * Math.cos(angle)+450/2);
+            }
+
+
+
+
+
+        }
+    </script>
+</head>
+<body onload="start()">
+<canvas id="canvas" width="450" height="450" style="border: 1px solid #000;"></canvas>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hex game</title>
+    <link rel="stylesheet" href="src/css/hex.css"/>
+    <script type="text/javascript" src="src/js/lib/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="src/js/lib/lodash.min.js"></script>
+    <script type="text/javascript" src="src/js/lib/frontbone.js"></script>
+
+
+    <script type="text/javascript" src="src/js/resources.js"></script>
+    <script type="text/javascript" src="src/js/units_container.js"></script>
+    <script type="text/javascript" src="src/js/player.js"></script>
+    <script type="text/javascript" src="src/js/unit.js"></script>
+
+    <script type="text/javascript" src="src/js/hex.js"></script>
+    <script type="text/javascript" src="src/js/map.js"></script>
+    <script type="text/javascript" src="src/js/building.js"></script>
+    <script type="text/javascript" src="src/js/settlement.js"></script>
+    <script type="text/javascript" src="src/js/buildings_list.js"></script>
+    <script type="text/javascript" src="src/js/unit_menu.js"></script>
+    <script type="text/javascript" src="src/js/game.js"></script>
+    <script type="text/javascript" src="src/js/army.js"></script>
+</head>
+<body>
+<div class="templates">
+    <div data-bind="template: unit_menu_storage_item">
+        <div class="unit_menu_storage_item">
+            <div class="unit_menu_storage_value">999</div>
+        </div>
+    </div>
+    <div data-bind="template: unit">
+        <div class="unit"></div>
+    </div>
+    <div data-bind="template: unit_menu_action">
+        <div class="unit_menu_action"></div>
+    </div>
+
+    <div data-bind="template: building">
+        <div class="building"></div>
+    </div>
+
+</div>
+<button class="toggle_frames">Toggle frames</button>
+
+<div class="building_menu_wrap" style="display: none;">
+    <div class="building_menu" data-bind="eachModel: availableBuildings">
+        <div class="building_menu_item">
+            <div class="hex_building hex_building_farm"></div>
+            <div class="building_title"></div>
+
+        </div>
+    </div>
+    <div class="building_menu_descr"></div>
+</div>
+
+<div class="unit_menu" style="display: none;">
+    <div class="unit_menu_descr unit_menu_border" style="display: none;">
+    </div>
+    <div class="unit_menu_actions unit_menu_border">
+    </div>
+    <div class="unit_menu_storage unit_menu_border">
+    </div>
+</div>
+
+<div class="end_turn"></div>
+
+<div class="map hide_frames">
+    <div class="units">
+
+    </div>
+    <div class="buildings">
+
+    </div>
+    <div class="hexagons">
+        <div class="hex">
+            <div class="hex_ground"></div>
+            <div class="hex_frame"></div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

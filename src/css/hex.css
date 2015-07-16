@@ -1,0 +1,204 @@
+.hex_ground {
+    position: absolute;
+    width: 122px;
+    height: 91px;
+    background: url("img/hex_ground.png") no-repeat;
+    left: -4px;
+    top: -15px;
+}
+
+.hex_frame, .hex {
+    position: absolute;
+    width: 113px;
+    height: 63px;
+    left: 0;
+    top: 0;
+}
+
+.hex_frame {
+    background: url("img/hex_frame.png");
+}
+
+.map {
+    position: relative;
+    margin: 100px;
+
+    height: 500px;
+}
+
+body {
+    background: #f8ff80 url("img/sand.png");
+    font-family: sans;
+    font-size: 14px;
+    color: #333;
+}
+
+.hide_frames .hex_frame {
+    display: none;
+}
+
+.highlighted
+{
+    z-index: 2;
+}
+.highlighted .hex_frame{
+    display: block;
+}
+
+.ground_desert {
+    background-position: 159px 0;
+}
+
+.ground_forest {
+    background: url("img/forest.png") 4px 6px no-repeat;
+}
+
+.ground_stone {
+    background: url("img/stone.png") no-repeat;
+}
+
+.ground_iron {
+    background: url("img/iron.png") no-repeat;
+}
+
+.building {
+    cursor: pointer;
+    height: 83px;
+    background: url("img/house.png") 33px 0 no-repeat;
+    position: absolute;
+    width: 100px;
+    z-index: 3;
+}
+
+
+
+.resources {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    background: #eee;
+    border: solid #989898;
+    border-width: 0  1px 1px 0;
+    border-radius: 0 0 4px 0;
+}
+
+.res_icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.res_item {
+    margin-right: 15px;
+}
+
+.res_wood {
+    background: #f76f22;
+}
+
+.res_food {
+    background: #8ff743;
+}
+
+.res_stone {
+    background: #d9d9d9;
+}
+
+
+.res_iron {
+    background: #d91c33;
+}
+
+
+.toggle_frames {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.unit_menu_border {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #000;
+    width: 400px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.unit_menu {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 20;
+}
+
+.unit_menu_actions, .unit_menu_storage{
+    float: left;
+    height: 95px;
+    margin-right: 10px;
+    padding-right: 0;
+    width: 410px;
+    padding-bottom: 0;
+}
+
+.unit_menu_storage {
+    width: auto;
+}
+
+.unit_menu_action {
+    cursor: pointer;
+    float: left;
+    width: 70px;
+    height: 35px;
+    background: #fff;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+}
+
+.unit_menu_storage_item {
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    width: 70px;
+    height: 82px;
+    background: #fff;
+    border: 1px solid #000;
+}
+
+.unit_menu_storage_value{
+    position: absolute;
+    width: 100%;
+    background: #000000;
+    bottom: 0;
+    text-align: center;
+}
+
+
+
+.end_turn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: url("img/End-Turn.png");
+    width: 58px;
+    height: 58px;
+    cursor: pointer;
+}
+
+
+
+.unit {
+    cursor: pointer;
+    width: 90px;
+    height: 63px;
+    background: url("img/unit.png") 30px 10px no-repeat;
+    position: absolute;
+    left: 30px;
+    top: 200px;
+    z-index: 5;
+    margin-left: 10px;
+}
