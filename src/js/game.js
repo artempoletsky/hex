@@ -50,9 +50,9 @@ $(function () {
 
             var player = this.player = new Player(this);
 
-            player.addSettlement(map.at(7,7));
-            player.settlements[0].build(map.at(7,8), 0);
-            //player.addArmy([new Unit()], map.at(7, 7));
+           // player.addSettlement(map.at(7,7));
+            //player.settlements[0].build(map.at(7,8), 0);
+            player.addArmy([new Unit()], map.at(7, 7));
 
         },
         copyPosition: function ($el, hex) {
